@@ -1,10 +1,11 @@
 {
-  "name": "comp1682-node",
+  "name": "y",
   "version": "1.0.0",
-  "description": "",
+  "description": "![Alt text](image-16.png)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,16 @@
     "express-rate-limit": "^6.8.1",
     "jsonwebtoken": "^9.0.1",
     "memory-cache": "^0.2.0",
-    "mongoose": "^7.4.1"
-  }
+    "mongoose": "^7.6.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinhhn3/comp1682-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vinhhn3/comp1682-node/issues"
+  },
+  "homepage": "https://github.com/vinhhn3/comp1682-node#readme"
 }

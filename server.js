@@ -6,6 +6,8 @@ const userRoutes = require("./src/routes/userRoutes");
 const authMiddleware = require("./src/middlewares/authMiddleware");
 const connectToDatabase = require("./src/config/database");
 const rateLimit = require("express-rate-limit");
+const swaggerUi = require("swagger-ui-express");
+const specs = require("./src/docs/swagger");
 
 dotenv.config();
 const app = express();
@@ -29,6 +31,7 @@ connectToDatabase();
 // Routes
 app.use("/products", authMiddleware, productRoutes);
 app.use("/users", userRoutes);
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
 // Start the server
 app.listen(PORT, () => {
